@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Учимся на 5</title>
   
-  
+  <subtitle>Уроки по школьной программе. ГДЗ для школьников. Помощь в решение домашних задний</subtitle>
   <link href="https://lessons.engaud.com/atom.xml" rel="self"/>
   
   <link href="https://lessons.engaud.com/"/>
