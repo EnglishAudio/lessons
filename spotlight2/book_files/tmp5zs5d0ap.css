@@ -68,18 +68,44 @@ input[type=mytext]:invalid {
  font-size: 80px; 
    height: 80px; 
    width: 60px; 
+  text-align: center
 }
 
 input[type=mytext]:focus {
     background-color: lightblue;
+   text-align: center
 }
 
 input[type=mytext]:valid {
   box-shadow: 0 0 5px 5px green;
  font-size: 80px; 
    height: 80px; 
-   width: 60px; 
+   width: 60px;
+  text-align: center 
 }
+
+[data-tooltip] {
+    position: relative; /* Относительное позиционирование */ 
+   }
+   
+[data-tooltip]::after {
+    content: attr(data-tooltip); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    width: 300px; /* Ширина подсказки */
+    left: 0; top: 0; /* Положение подсказки */
+    background: #3989c9; /* Синий цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 0.5em; /* Поля вокруг текста */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+    pointer-events: none; /* Подсказка */
+    opacity: 0; /* Подсказка невидима */
+    transition: 1s; /* Время появления подсказки */
+   } 
+   
+[data-tooltip]:hover::after {
+    opacity: 1; /* Показываем подсказку */
+    top: 2em; /* Положение подсказки */
+   }
 
 .md{transform:matrix(0.224696,-0.109598,0.109598,0.224696,0,0);-ms-transform:matrix(0.224696,-0.109598,0.109598,0.224696,0,0);-webkit-transform:matrix(0.224696,-0.109598,0.109598,0.224696,0,0);}
 .mb{transform:matrix(0.229408,0.061467,-0.064702,0.241482,0,0);-ms-transform:matrix(0.229408,0.061467,-0.064702,0.241482,0,0);-webkit-transform:matrix(0.229408,0.061467,-0.064702,0.241482,0,0);}
