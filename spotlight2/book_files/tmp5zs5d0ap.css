@@ -107,6 +107,38 @@ input[type=mytext]:valid {
     top: 2em; /* Положение подсказки */
    }
 
+.tip-click {
+  position: relative;
+  z-index: 100;
+  display: block;
+  background: red;
+  border-radius: 50%;
+  width: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+.tip {
+/*   display: inline-block; */
+  position: absolute;
+  width: 400px;
+  background: lightblue;
+  border-radius: 5px;
+  padding: 30px 20px 20px;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.support:focus .tip {
+  display: block;
+}
+
+.support:focus .tip-click{
+  background: green;
+}
 .md{transform:matrix(0.224696,-0.109598,0.109598,0.224696,0,0);-ms-transform:matrix(0.224696,-0.109598,0.109598,0.224696,0,0);-webkit-transform:matrix(0.224696,-0.109598,0.109598,0.224696,0,0);}
 .mb{transform:matrix(0.229408,0.061467,-0.064702,0.241482,0,0);-ms-transform:matrix(0.229408,0.061467,-0.064702,0.241482,0,0);-webkit-transform:matrix(0.229408,0.061467,-0.064702,0.241482,0,0);}
 .m7{transform:matrix(0.231873,0.051395,-0.054100,0.244076,0,0);-ms-transform:matrix(0.231873,0.051395,-0.054100,0.244076,0,0);-webkit-transform:matrix(0.231873,0.051395,-0.054100,0.244076,0,0);}
