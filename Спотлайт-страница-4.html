@@ -261,7 +261,7 @@ Ya.Site.Form.init()
 <p><a href="/%D0%A1%D0%BF%D0%BE%D1%82%D0%BB%D0%B0%D0%B9%D1%82-%D0%A3%D1%80%D0%BE%D0%BA-1-%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B-4-5.html">Смотрите полным урок с учителем здесь</a></p>
 <p>Sing along! Поем вместе. </p>
 <p>Hello, hello, everyone,<br>I’m Nanny Shine, hello!<br>Come in and get ready,<br>Come on, everyone – let’s go!<br>My name is Nanny Shine.<br>Tell me what’s your name.<br>My name is Nanny Shine.<br>Nanny Shine’s my name!</p>
-<div id="aplayer-IiwMcbRp" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+<div id="aplayer-OOsBvfYm" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
 				<pre class="aplayer-lrc-content">
 [00:30.00]Hello, hello, everyone,
 [00:34.00]I’m Nanny Shine, hello!
@@ -276,7 +276,7 @@ Ya.Site.Form.init()
 			</div>
 			<script>
 				var ap = new APlayer({
-					element: document.getElementById("aplayer-IiwMcbRp"),
+					element: document.getElementById("aplayer-OOsBvfYm"),
 					narrow: false,
 					autoplay: false,
 					showlrc: 2,
@@ -299,7 +299,7 @@ Ya.Site.Form.init()
 
 
 
-    <a data-url="https://lessons.engaud.com/%D0%A1%D0%BF%D0%BE%D1%82%D0%BB%D0%B0%D0%B9%D1%82-%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0-4.html" data-id="ckxhdyorc002i90esaxmcfq73" class="article-share-link"><i class="fa fa-share"></i>Поделиться</a>
+    <a data-url="https://lessons.engaud.com/%D0%A1%D0%BF%D0%BE%D1%82%D0%BB%D0%B0%D0%B9%D1%82-%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0-4.html" data-id="ckxx5b6eo004l0geseco6dpst" class="article-share-link"><i class="fa fa-share"></i>Поделиться</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -392,10 +392,13 @@ Hello, hello, everyone,I’m Nanny Shine, hello!Come in and get ready,Come on, e
     <section id="comments">
     
         
-    <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </div>
-
+    <div id="vk_comments"></div>
+    <script type="text/javascript">
+      window.onload = function () {
+      VK.init({apiId: 7485450, onlyWidgets: true});
+      VK.Widgets.Comments("vk_comments", {limit: 20, attach: "*"});
+    }
+   </script>
 
     
     </section>
@@ -686,7 +689,7 @@ Hello, hello, everyone,I’m Nanny Shine, hello!Come in and get ready,Come on, e
                 <h1 class="logo-wrap">
                     <a href="/" class="logo"></a>
                 </h1>
-                <p>&copy; 2021 авторы Учимся на Пять</p>
+                <p>&copy; 2022 авторы Учимся на Пять</p>
                 
                 <p>Powered by <a href="https://designest.ru/" target="_blank">DESIGNest Studio Ltd</a></p>
                 
@@ -709,21 +712,18 @@ Hello, hello, everyone,I’m Nanny Shine, hello!Come in and get ready,Come on, e
     </div>
     
     
-    <script>
-    var disqus_shortname = 'engaud';
-    
-    
-    var disqus_url = 'https://lessons.engaud.com/%D0%A1%D0%BF%D0%BE%D1%82%D0%BB%D0%B0%D0%B9%D1%82-%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0-4.html';
-    
+    <script type="text/javascript">
+    var vk_shortname = 'true';
     (function() {
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    var vk = document.createElement('script');
+    vk.type = 'text/javascript';
+    vk.async = true;
+    vk.src = '//vk.com/js/api/openapi.js?169'; 
+    vk.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+    || document.getElementsByTagName('body')[0]).appendChild(vk);
     })();
     </script>
-
 
 
 
